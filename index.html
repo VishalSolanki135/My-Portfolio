@@ -24,6 +24,7 @@
 </head>
 <body>
 
+
       <!-- Main Container -->
       <div class="main-container">
             <!-- Sidebar -->
@@ -392,8 +393,13 @@
       <script src="js/trail.js"></script>
       <script src="js/contact.js"></script>
       <script>
-            $(document).ready(function() {
-                  var entries = [
+
+      $(window).on("load",function(){
+            $(".loader-wrapper").fadeOut("slow");
+      });
+
+      $(document).ready(function() {
+            var entries = [
                   {label: 'HTML'},
                   {label: 'CSS'},
                   {label: 'JAVASCRIPT'},
@@ -412,31 +418,31 @@
                   {label: 'GITHUB'},
                   {label: 'IOT'},
                   {label: 'JQUERY'}
-                  ];
+            ];
 
-                  var settings = {
-                        entries: entries,
-                        width: 300,
-                        height: 300,
-                        radius: '70%',
-                        radiusMin: 75,
-                        bgDraw: true,
-                        bgColor: 'var(--bg-black-900)',
-                        opacityOver: 1.00,
-                        opacityOut: 0.05,
-                        opacitySpeed: 6,
-                        fov: 800,
-                        speed: 1,
-                        fontFamily: 'Courier, Arial, sans-serif',
-                        fontSize: '20',
-                        fontColor: 'var(--skin-color)',
-                        fontWeight: 'bold',
-                        fontStyle: 'normal',
-                        fontToUpperCase: true
-                  };
+            var settings = {
+                  entries: entries,
+                  width: 300,
+                  height: 300,
+                  radius: '70%',
+                  radiusMin: 75,
+                  bgDraw: true,
+                  bgColor: 'var(--bg-black-900)',
+                  opacityOver: 1.00,
+                  opacityOut: 0.05,
+                  opacitySpeed: 6,
+                  fov: 800,
+                  speed: 1,
+                  fontFamily: 'Courier, Arial, sans-serif',
+                  fontSize: '20',
+                  fontColor: 'var(--skin-color)',
+                  fontWeight: 'bold',
+                  fontStyle: 'normal',
+                  fontToUpperCase: true
+            };
 
-                  $('#tg').svg3DTagCloud(settings);
-            });
+            $('#tg').svg3DTagCloud(settings);
+      });
 
       </script>
 </body>
