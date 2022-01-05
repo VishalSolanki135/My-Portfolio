@@ -22,6 +22,7 @@ $(document).ready(function(){
                   var range = 15;
 
                   var color = "background: rgb("+getRandomInt(0,255)+","+getRandomInt(0,255)+","+getRandomInt(0,255)+");";
+                  // var color = "background: --skin-color;";
 
                   var sizeInt = getRandomInt(10, 20);
                   size = "height: " + sizeInt + "px; width: " + sizeInt + "px;";

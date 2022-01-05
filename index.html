@@ -9,7 +9,7 @@
       <!-- CSS files -->
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="css/skins/color-1.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
       <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
       <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
       <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
@@ -51,6 +51,9 @@
       <!-- Main Container -->
       <div class="main-container" id="wrap">
             <!-- Sidebar -->
+            <div class="music">
+                  <i class="fas fa-music"></i>
+            </div>
             <div class="sidebar">
                   <div class="logo">
                         <a href="#"><span>E</span>ngineer</a>
@@ -398,6 +401,12 @@
       <!-- Whole Content End Ho Gaya -->
 
       <div class="style-switcher">
+            <div class="music icon">
+                  <i class="fas fa-music" id="playPauseBtn" onclick="playPause();"></i>
+                  <audio id="audio">
+                        <source src="media/Midnight-Stroll-Lofi-Study-Music.mp3" type="audio/mpeg">
+                  </audio>
+            </div>
             <div class="style-switcher-toggler icon">
                   <i class="fas fa-cog fa-spin"></i>
             </div>

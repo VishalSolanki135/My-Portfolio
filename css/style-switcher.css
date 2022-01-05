@@ -47,6 +47,10 @@
       top: 50px;
 }
 
+.style-switcher .music {
+      top: 100px;
+}
+
 .style-switcher h4 {
       margin: 0 0 10px;
       color: var(--text-black-700);
