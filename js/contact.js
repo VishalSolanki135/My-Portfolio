@@ -5,7 +5,7 @@ document.getElementById('sendMsg').addEventListener('submit', submitForm);
 
 function submitForm(e) {
       e.preventDefault();
-
+      
       var name = getInputVal('name');
       var email = getInputVal('email');
       var subject = getElementById('subject');
